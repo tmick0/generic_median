@@ -28,7 +28,7 @@ To use your shiny new `MedianFilter` object, you will employ three simple method
 - `bool isReady()`: Returns `true` if we have read the necessary number of samples to compute the median.
 - `T getMedian()`: Returns the median of the window. It will have been pre-computed on the last call to `addSample`, so it costs nothing to call this several times. Note that nothing useful will be returned if we haven't read enough data, so you should check `isReady()` first.
 
-Sample code is provided in `test.cpp`. The sample program obtains 1000 random integers and prints out the median after each reading. Simply compile with `g++ test.cpp`.
+Sample code is provided in `examples/test/test.cpp`. The sample program obtains 1000 random integers and prints out the median after each reading. Simply compile with `g++ test.cpp`.
 
 ## Implementation details
 
