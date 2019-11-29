@@ -1,0 +1,4 @@
+MedianFilter   KEYWORD1
+addSample KEYWORD2
+isReady KEYWORD2
+getMedian KEYWORD2
