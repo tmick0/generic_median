@@ -8,7 +8,7 @@ public:
   /* Constructor
    */
   MedianFilter()
-  : m_idx(0), m_med(0), m_cnt(0)
+  : m_idx(0), m_cnt(0), m_med(0)
   {
   }
   
