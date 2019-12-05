@@ -11,9 +11,8 @@ int main(int argc, char **argv)
     for(int i = 0; i < 1000; i++){
         int s = rand() % 100;
         f.addSample(s);
-        if(f.isReady()){
-            std::cout << f.getMedian() << std::endl;
-        }
+
+        std::cout << f.getMedian() << std::endl;
     }
     
     return 0;

@@ -9,9 +9,7 @@ void setup() {
         int s = rand() % 100;
         filter.addSample(s);
 
-        if (filter.isReady()) {
-            Serial.println(filter.getMedian());
-        }
+        Serial.println(filter.getMedian());
     }
 }
 
