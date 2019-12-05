@@ -19,18 +19,13 @@ public:
   {
     m_buf[m_idx] = s;
     m_idx = (m_idx + 1) % S;
-    m_cnt += (m_cnt < S) ? 1 : 0;
+
     if(m_cnt == S){
-        p_calcMedian();
+      p_calcMedian();
+    } else {
+      m_cnt++;
+      addSample(s);
     }
-  }
-  
-  /* isReady(): returns true if at least the required number of samples
-   * have been gathered, false otherwise
-   */
-  bool isReady()
-  {
-    return m_cnt == S;
   }
   
   /* getMedian(): returns the median computed when the last sample was
